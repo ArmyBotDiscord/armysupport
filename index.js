@@ -1,19 +1,19 @@
 const Discord = require('discord.js');
 
-const client = new Discord.Client();
+const bot = new Discord.Client();
 
 var prefix = "*";
 
-client.login(process.env.TOKEN);
+bot.login(process.env.TOKEN);
 
-client.on("ready", () => {
+bot.on("ready", () => {
 
     console.log("Je suis prêt !");
-    client.user.setGame("Regarder des mangas");
+    bot.user.setGame("Regarder des mangas");
 
 });
 
-client.on('message', async message => { 
+bot.on('message', async message => { 
 
     if(message.content === "Bonjour"){
         message.reply("Salut");
