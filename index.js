@@ -4,6 +4,6 @@ const client = new Discord.Client();
 
 var prefix = "*";
 
-client.login("ICI VOTRE TOKEN");
+client.login(process.env.TOKEN);
 
 client.on('message', async message => { 
