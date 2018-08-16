@@ -7,9 +7,8 @@ var prefix = "*";
 bot.login(process.env.TOKEN);
 
 bot.on("ready", () => {
-
-    console.log("Je suis prêt !");
     bot.user.setGame("Regarder des mangas");
+    console.log("Je suis prêt !");
 
 });
 
